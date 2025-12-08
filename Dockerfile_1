@@ -1,0 +1,16 @@
+//This Docker file contains, how to create a frontend react-app image using custom Dockerfile
+
+# Use Nginx to serve the React build 
+FROM nginx:alpine 
+ 
+# Remove default Nginx config 
+RUN rm -rf /usr/share/nginx/html/* 
+ 
+# Copy React build files 
+COPY build/ /usr/share/nginx/html 
+ 
+# Expose port 80 
+EXPOSE 80
+
+# Start Nginx 
+CMD ["nginx", "-g", "daemon off;"]
