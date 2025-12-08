@@ -1,4 +1,4 @@
-//This Dockerfile contains how to create  java backend custom  image
+#//This Dockerfile contains how to create  java backend custom  image
 
 #use a official openjdk base image 
 
