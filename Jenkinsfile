@@ -5,7 +5,6 @@ pipeline {
       steps {
         sh '''
         sudo docker build -t java-app-1 .
-        sudo docker images 
         '''
       }
     }
