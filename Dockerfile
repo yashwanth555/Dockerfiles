@@ -12,7 +12,7 @@ WORKDIR /app
 COPY SC_Platform-0.0.1-SNAPSHOT_30_9_evg.jar app.jar
 #Expose the port that ur APP runs on (eg.8080) 
 
-EXPOSE 8080 
+EXPOSE 8081
 #RUN the Jar File 
 
 ENTRYPOINT ["java", "-jar", "app.jar"] 
