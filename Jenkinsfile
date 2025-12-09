@@ -1,5 +1,9 @@
 pipeline {
-  agent {dockerfile true} //use dockerfile as an agent for the pipeline
+  agent{
+    dockerfile {
+      filename 'Dockerfile'
+    }
+  }
   stages{
     stage ('build docker imaging'){
       steps {
